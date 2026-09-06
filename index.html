@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crudo Sibiu — Focaccia proaspătă pe Bălcescu</title>
+  <meta name="description" content="Crudo — focacceria și panineria din Sibiu, pe Bulevardul Nicolae Bălcescu. Focaccia coaptă zilnic, panini de la 35 lei." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <img src="img/logo.jpg" alt="Crudo" class="preloader-logo-img" />
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">
+        <img src="img/logo.jpg" alt="Crudo — A Slice, A Sip, A Story" class="logo-img" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Acasă</a>
+        <a href="#poveste">Poveste</a>
+        <a href="menu.html">Meniu</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#locatie">Locație</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm nav-cta" href="menu.html">Comandă</a>
+        <button class="burger" id="burger" aria-label="Meniu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg-shape shape-1"></div>
+    <div class="hero-bg-shape shape-2"></div>
+    <div class="hero-bg-shape shape-3"></div>
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <p class="hero-kicker" id="heroKicker">Sibiu</p>
+        <h1 class="hero-title">Crudo<span class="accent">.</span></h1>
+        <p class="hero-sub" id="heroTagline"></p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" id="heroWhatsapp" href="menu.html">Comandă acum</a>
+          <a class="btn btn-ghost" href="menu.html">Vezi meniul</a>
+        </div>
+        <div class="hero-stats" id="heroStats"></div>
+      </div>
+      <div class="hero-visual reveal delay-2">
+        <div class="pizza-ring">
+          <img src="img/logo.jpg" alt="Crudo — A Slice, A Sip, A Story" class="hero-logo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section story" id="poveste">
+    <div class="container story-grid">
+      <div class="story-photo reveal">
+        <img src="img/hero.jpg" alt="Focaccia și panini Crudo" />
+        <span class="story-stamp">copt zilnic</span>
+      </div>
+      <div class="story-copy reveal delay-1">
+        <p class="kicker kicker-wine" id="storyKicker">Povestea</p>
+        <h2 class="section-title" id="storyTitle"></h2>
+        <div class="story-text" id="storyText"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section menu" id="meniu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker kicker-wine" id="menuKicker">Meniul</p>
+        <h2 class="section-title" id="menuTitle"></h2>
+        <p class="section-sub" id="menuSub"></p>
+      </div>
+
+      <article class="signature reveal" id="signature"></article>
+      <div class="menu-grid" id="menuGrid"></div>
+      <div class="menu-preview-cta reveal">
+        <a class="btn btn-wine" href="menu.html">Vezi meniul complet</a>
+        <p>Acolo adaugi în coș și plasezi comanda — pe site, ca mockup.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery" id="galerie">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker kicker-wine">Galerie</p>
+        <h2 class="section-title">Masa, cuptorul, strada</h2>
+        <p class="section-sub">Preparate și un colț de Bălcescu — lumină caldă, fără filtre de restaurant.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <section class="section location" id="locatie">
+    <div class="container location-grid">
+      <div class="location-copy reveal">
+        <p class="kicker kicker-wine">Locație & program</p>
+        <h2 class="section-title">Pe Bălcescu, în cetate.</h2>
+        <p class="section-sub" id="locationAddress"></p>
+        <ul class="hours" id="hoursList"></ul>
+        <div class="location-cta">
+          <a class="btn btn-wine" id="callBtn" href="#">Sună acum</a>
+          <a class="btn btn-ghost-wine" id="mapsBtn" href="#" target="_blank" rel="noopener">Deschide harta</a>
+          <button class="btn btn-ghost-wine" type="button" data-info="hours">Detalii program</button>
+        </div>
+      </div>
+      <div class="map-wrap reveal delay-1">
+        <iframe
+          id="mapFrame"
+          title="Hartă Crudo — Bulevardul Nicolae Bălcescu, Sibiu"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="about:blank"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section loyalty" id="fidelitate">
+    <div class="container loyalty-grid">
+      <div class="loyalty-copy reveal">
+        <p class="kicker kicker-wine" id="loyaltyKicker">Fidelitate</p>
+        <h2 class="section-title" id="loyaltyTitle"></h2>
+        <p class="section-sub" id="loyaltyText"></p>
+        <button class="info-link info-link-wine" type="button" data-info="loyalty">Cum funcționează cardul?</button>
+      </div>
+      <div class="punch-card reveal delay-1" id="punchCard" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="section newsletter" id="newsletter">
+    <div class="container newsletter-inner reveal">
+      <div>
+        <p class="kicker kicker-wine">Newsletter</p>
+        <h2 class="section-title">Află când iese focaccia caldă.</h2>
+        <p class="section-sub">Nume și email — te anunțăm din când în când. Fără spam, fără cont.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <div class="field">
+          <label for="nlName">Nume</label>
+          <input type="text" id="nlName" name="name" placeholder="Ana" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="nlEmail">Email</label>
+          <input type="email" id="nlEmail" name="email" placeholder="ana@email.com" autocomplete="email" required />
+        </div>
+        <button type="submit" class="btn btn-wine btn-full">Mă înscriu</button>
+        <p class="form-note">Formular vizual — nu trimite date nicăieri.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="logo"><img src="img/logo.jpg" alt="Crudo" class="logo-img" /></a>
+        <p>A slice, a sip, a story — focacceria de pe Bălcescu.</p>
+        <div class="socials">
+          <a id="igLink" href="#instagram" aria-label="Instagram">Instagram</a>
+          <a id="fbLink" href="#facebook" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Program</h4>
+        <div id="footerHours"></div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p id="footerPhone"></p>
+        <p id="footerEmail"></p>
+        <p id="footerAddress"></p>
+      </div>
+      <div class="footer-col">
+        <h4>Comandă</h4>
+        <p>Comandă din meniu, pe site.</p>
+        <a class="btn btn-primary btn-sm" href="menu.html">Deschide meniul</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Crudo Sibiu · Focaccia, nu ceremonie</p>
+    </div>
+  </footer>
+
+  <a class="float-cta" href="menu.html">Comandă</a>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/content.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

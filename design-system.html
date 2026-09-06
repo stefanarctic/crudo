@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crudo Design System — extras din hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/design-system.css" />
+</head>
+<body class="ds-body">
+  <button class="ds-mobile-toggle" id="dsToggle" aria-label="Deschide navigarea">☰</button>
+
+  <div class="ds-shell">
+    <aside class="ds-nav" id="dsNav">
+      <a href="#intro" class="ds-nav-brand">
+        <img src="img/logo.jpg" alt="Crudo" />
+        <span>Crudo System<small>A slice, a sip, a story</small></span>
+      </a>
+      <nav class="ds-nav-links">
+        <a href="#intro">Introducere</a>
+        <a href="#principii">Principii</a>
+        <a href="#culoare">Culoare</a>
+        <a href="#tipografie">Tipografie</a>
+        <a href="#spatiere">Spațiere & formă</a>
+        <a href="#miscare">Mișcare</a>
+        <a href="#componente">Componente</a>
+        <a href="#suprafete">Suprafețe</a>
+        <a href="#reguli">Do / Don't</a>
+      </nav>
+      <div class="ds-nav-foot">
+        <a href="index.html">← Înapoi la site</a>
+      </div>
+    </aside>
+
+    <main class="ds-main">
+      <header class="ds-hero" id="intro">
+        <div class="ds-hero-inner">
+          <p class="kicker ds-kicker">Sibiu · Design system</p>
+          <h1>Crudo<span class="accent">.</span></h1>
+          <p class="ds-hero-lead">
+            Limbajul vizual extras din hero: burgundy cald peste fotografie de mâncare,
+            accent piersică, pill-uri generoase și tipografie geometrică. Tot ce urmează
+            e făcut să se simtă ca o felie tăiată din aceeași poveste.
+          </p>
+          <div class="ds-hero-meta">
+            <div><strong>Wine + Peach</strong><p>perechea de brand</p></div>
+            <div><strong>Poppins 800</strong><p>titlul de hero</p></div>
+            <div><strong>99px</strong><p>raza pill</p></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="ds-section" id="principii">
+        <div class="ds-wrap">
+          <p class="kicker kicker-wine ds-kicker">Fundamente</p>
+          <h2 class="ds-h2">Trei reguli, ca la aluat</h2>
+          <p class="ds-lead">Hero-ul decide totul. Dacă un element nu ar putea sta pe acea fotografie cu overlay burgundy, nu aparține sistemului.</p>
+          <div class="ds-grid-3">
+            <article class="ds-card">
+              <h3>Cald, nu cute</h3>
+              <p>Burgundy desaturat, piersică mată, crem de hârtie. Fără neon, fără violet, fără sticlă rece.</p>
+            </article>
+            <article class="ds-card">
+              <h3>Aer generos</h3>
+              <p>Margini late, titluri mari, butoane cu respirație. Densitatea e pentru meniu, nu pentru hero.</p>
+            </article>
+            <article class="ds-card">
+              <h3>Forma pastilei</h3>
+              <p>Badge-uri, CTA-uri, tab-uri, toast-uri — toate se închid în pill. Cercurile sunt rezervate logo-ului și coșului.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section ds-section-wine" id="culoare">
+        <div class="ds-wrap">
+          <p class="kicker ds-kicker">Paletă</p>
+          <h2 class="ds-h2">Culoarea vine din overlay</h2>
+          <p class="ds-lead">Hero-ul pune un gradient wine peste fotografie. Peach-ul taie întunericul — punctul din „Crudo.”, butonul primar, cifrele. Crema e vocea textului.</p>
+          <p class="ds-copy-note">Click pe un swatch copiază hex-ul.</p>
+
+          <div class="ds-grid-4" id="swatches">
+            <button class="ds-swatch" data-hex="#4A1F27" type="button">
+              <div class="ds-swatch-chip" style="background:#4A1F27"></div>
+              <div class="ds-swatch-meta"><strong>Wine 900</strong><code>--wine-900</code></div>
+            </button>
+            <button class="ds-swatch" data-hex="#5C2833" type="button">
+              <div class="ds-swatch-chip" style="background:#5C2833"></div>
+              <div class="ds-swatch-meta"><strong>Wine 800</strong><code>--wine-800</code></div>
+            </button>
+            <button class="ds-swatch" data-hex="#6E2F3C" type="button">
+              <div class="ds-swatch-chip" style="background:#6E2F3C"></div>
+              <div class="ds-swatch-meta"><strong>Wine 700</strong><code>--wine-700</code></div>
+            </button>
+            <button class="ds-swatch" data-hex="#93485A" type="button">
+              <div class="ds-swatch-chip" style="background:#93485A"></div>
+              <div class="ds-swatch-meta"><strong>Wine 500</strong><code>--wine-500</code></div>
+            </button>
+            <button class="ds-swatch" data-hex="#F6CBA6" type="button">
+              <div class="ds-swatch-chip" style="background:#F6CBA6"></div>
+              <div class="ds-swatch-meta"><strong>Peach</strong><code>--peach</code></div>
+            </button>
+            <button class="ds-swatch" data-hex="#F9DCBE" type="button">
+              <div class="ds-swatch-chip" style="background:#F9DCBE"></div>
+              <div class="ds-swatch-meta"><strong>Peach soft</strong><code>--peach-soft</code></div>
+            </button>
+            <button class="ds-swatch" data-hex="#FBF3E9" type="button">
+              <div class="ds-swatch-chip" style="background:#FBF3E9"></div>
+              <div class="ds-swatch-meta"><strong>Cream</strong><code>--cream</code></div>
+            </button>
+            <button class="ds-swatch" data-hex="#2E1A1F" type="button">
+              <div class="ds-swatch-chip" style="background:#2E1A1F"></div>
+              <div class="ds-swatch-meta"><strong>Ink</strong><code>--ink</code></div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="tipografie">
+        <div class="ds-wrap">
+          <p class="kicker kicker-wine ds-kicker">Vocile</p>
+          <h2 class="ds-h2">Un sans, două volume</h2>
+          <p class="ds-lead">Hero-ul vorbește în Poppins: ExtraBold pentru nume, Light pentru poveste. Seriful e doar pentru motto-ul din siglă — „A slice, a sip, a story”.</p>
+
+          <dl>
+            <div class="ds-type-row">
+              <dt>Display</dt>
+              <dd class="ds-display">Crudo<span style="color:var(--peach)">.</span></dd>
+            </div>
+            <div class="ds-type-row">
+              <dt>Title</dt>
+              <dd class="ds-title">Alege povestea ta</dd>
+            </div>
+            <div class="ds-type-row">
+              <dt>Stat</dt>
+              <dd class="ds-stat">30–45 min</dd>
+            </div>
+            <div class="ds-type-row">
+              <dt>Kicker</dt>
+              <dd class="ds-kicker-sample">Sibiu</dd>
+            </div>
+            <div class="ds-type-row">
+              <dt>Body</dt>
+              <dd class="ds-body">Aluat dospit lent, ingrediente proaspete și felii generoase, livrate fierbinți direct la ușa ta.</dd>
+            </div>
+            <div class="ds-type-row">
+              <dt>Motto</dt>
+              <dd class="ds-serif">A slice, a sip, a story</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="ds-section" id="spatiere">
+        <div class="ds-wrap">
+          <p class="kicker kicker-wine ds-kicker">Ritm</p>
+          <h2 class="ds-h2">Spațiu ca la o masă așezată</h2>
+          <p class="ds-lead">Hero-ul folosește trepte late: 1.4, 2, 2.6, apoi 6.5rem între secțiuni. Razele sunt fie pastilă, fie cerc — aproape niciodată pătrat.</p>
+
+          <div class="ds-card" style="margin-bottom:2rem">
+            <div class="ds-space-row"><span>--space-4</span><div class="ds-space-bar" style="width:16px"></div><small>1rem · gap intern</small></div>
+            <div class="ds-space-row"><span>--space-5</span><div class="ds-space-bar" style="width:22px"></div><small>1.4rem · kicker → titlu</small></div>
+            <div class="ds-space-row"><span>--space-6</span><div class="ds-space-bar" style="width:32px"></div><small>2rem · text → CTA</small></div>
+            <div class="ds-space-row"><span>--space-7</span><div class="ds-space-bar" style="width:42px"></div><small>2.6rem · CTA → stats</small></div>
+            <div class="ds-space-row"><span>--space-10</span><div class="ds-space-bar" style="width:104px"></div><small>6.5rem · între secțiuni</small></div>
+          </div>
+
+          <div class="ds-radius-row">
+            <div class="ds-radius-item">
+              <div class="ds-radius-box" style="border-radius:14px"></div>
+              <p>14px input</p>
+            </div>
+            <div class="ds-radius-item">
+              <div class="ds-radius-box" style="border-radius:22px"></div>
+              <p>22px card</p>
+            </div>
+            <div class="ds-radius-item">
+              <div class="ds-radius-box" style="border-radius:99px"></div>
+              <p>99px pill</p>
+            </div>
+            <div class="ds-radius-item">
+              <div class="ds-radius-box" style="border-radius:50%"></div>
+              <p>50% siglă</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section ds-section-wine" id="miscare">
+        <div class="ds-wrap">
+          <p class="kicker ds-kicker">Timp</p>
+          <h2 class="ds-h2">Ridicare scurtă, nu salt</h2>
+          <p class="ds-lead">Easing-ul hero-ului e cubic-bezier(0.22, 1, 0.36, 1). Hover-ul ridică 3px. Logo-ul plutește lent. Nimic nu bounce-uiește.</p>
+          <div class="ds-grid-3">
+            <article class="ds-card ds-card-wine">
+              <h3>--duration-fast</h3>
+              <p>0.3s — butoane, tab-uri, link-uri.</p>
+            </article>
+            <article class="ds-card ds-card-wine">
+              <h3>--duration-med</h3>
+              <p>0.45s — drawer, modal, toast.</p>
+            </article>
+            <article class="ds-card ds-card-wine">
+              <h3>--lift</h3>
+              <p>translateY(-3px) pe hover. Active revine la -1px.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="componente">
+        <div class="ds-wrap">
+          <p class="kicker kicker-wine ds-kicker">Kit</p>
+          <h2 class="ds-h2">Componentele din hero, generalizate</h2>
+          <p class="ds-lead">Aceleași clase ca pe site. Pe fond wine folosești ghost alb; pe crem folosești ghost-wine sau butonul wine.</p>
+
+          <h3 class="ds-kicker-sample" style="margin:2rem 0 1rem">Butoane · suprafață hero</h3>
+          <div class="ds-playground">
+            <a class="btn btn-primary" href="#componente">Comandă acum</a>
+            <a class="btn btn-ghost" href="#componente">Contact</a>
+            <button class="btn btn-primary btn-sm" type="button">Adaugă</button>
+          </div>
+
+          <h3 class="ds-kicker-sample" style="margin:2.2rem 0 1rem">Butoane · suprafață crem</h3>
+          <div class="ds-playground ds-playground-light">
+            <a class="btn btn-primary" href="#componente">Comandă acum</a>
+            <a class="btn btn-wine" href="#componente">Vezi meniul</a>
+            <a class="btn btn-ghost-wine" href="#componente">Contact</a>
+          </div>
+
+          <h3 class="ds-kicker-sample" style="margin:2.2rem 0 1rem">Kicker / badge</h3>
+          <div class="ds-playground">
+            <span class="kicker">Sibiu</span>
+            <span class="kicker">Livrare 30–45 min</span>
+          </div>
+          <div class="ds-playground ds-playground-light" style="margin-top:1rem">
+            <span class="kicker kicker-wine">Meniul nostru</span>
+            <span class="tag">Nou</span>
+          </div>
+
+          <h3 class="ds-kicker-sample" style="margin:2.2rem 0 1rem">Statistici</h3>
+          <div class="ds-playground">
+            <div class="ds-stats-demo">
+              <div><strong>30–45<span style="font-size:1.1rem"> min</span></strong><p>timp de livrare</p></div>
+              <div><strong>100<span style="font-size:1.1rem">%</span></strong><p>ingredient proaspăt</p></div>
+              <div><strong>4.9<span style="font-size:1.1rem">★</span></strong><p>nota clienților</p></div>
+            </div>
+          </div>
+
+          <h3 class="ds-kicker-sample" style="margin:2.2rem 0 1rem">Tab-uri & toast</h3>
+          <div class="menu-tabs" style="justify-content:flex-start;margin-bottom:1.2rem">
+            <button class="tab active" type="button">La felie</button>
+            <button class="tab" type="button">Pizza întreagă</button>
+            <button class="tab" type="button">Băuturi</button>
+          </div>
+          <span class="toast ds-toast-preview">Adăugat în coș — Margherita</span>
+        </div>
+      </section>
+
+      <section class="ds-section ds-section-wine" id="suprafete">
+        <div class="ds-wrap">
+          <p class="kicker ds-kicker">Straturi</p>
+          <h2 class="ds-h2">Două lumi, o singură masă</h2>
+          <p class="ds-lead">Hero, bandă de livrare și footer stau pe wine. Meniul, cardurile și formularele stau pe crem. Accentul peach le leagă.</p>
+          <table class="ds-table">
+            <thead>
+              <tr><th>Token</th><th>Folosire</th><th>Text</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>--surface-hero</code></td><td>Hero + overlay foto</td><td>cream / peach</td></tr>
+              <tr><td><code>--surface-page</code></td><td>Meniu, pagini interioare</td><td>ink / wine</td></tr>
+              <tr><td><code>--surface-card</code></td><td>Carduri, modal, drawer</td><td>wine-800</td></tr>
+              <tr><td><code>--surface-band</code></td><td>Bandă livrare</td><td>peach + cream</td></tr>
+              <tr><td><code>--surface-footer</code></td><td>Footer</td><td>cream 65%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="ds-section" id="reguli">
+        <div class="ds-wrap">
+          <p class="kicker kicker-wine ds-kicker">Gardă</p>
+          <h2 class="ds-h2">Păstrează felia intactă</h2>
+          <div class="ds-grid-2">
+            <article class="ds-card ds-do">
+              <h3>Do</h3>
+              <p>Peach pe wine pentru CTA-ul principal. Punctul din titlu rămâne peach. Kickerele sunt uppercase, cu tracking larg. Foto-ul de mâncare rămâne sub overlay, niciodată gol.</p>
+            </article>
+            <article class="ds-card ds-dont">
+              <h3>Don't</h3>
+              <p>Nu folosi Inter, umbre colorate sau colțuri de 4px. Nu pune buton peach pe crem lângă alt peach. Nu înlocui overlay-ul wine cu negru pur — pierde căldura.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script>
+    const toast = document.getElementById("toast");
+    const showToast = (msg) => {
+      toast.textContent = msg;
+      toast.classList.add("show");
+      clearTimeout(showToast.t);
+      showToast.t = setTimeout(() => toast.classList.remove("show"), 1600);
+    };
+
+    document.getElementById("swatches").addEventListener("click", async (e) => {
+      const swatch = e.target.closest("[data-hex]");
+      if (!swatch) return;
+      try {
+        await navigator.clipboard.writeText(swatch.dataset.hex);
+      } catch (_) { /* clipboard poate fi blocat în iframe */ }
+      showToast("Copiat " + swatch.dataset.hex);
+    });
+
+    document.querySelectorAll(".menu-tabs .tab").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tab.parentElement.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+      });
+    });
+
+    const nav = document.getElementById("dsNav");
+    document.getElementById("dsToggle").addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+    nav.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => nav.classList.remove("open"));
+    });
+
+    const links = [...document.querySelectorAll(".ds-nav-links a")];
+    const sections = links.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+    const setActive = () => {
+      const y = window.scrollY + 120;
+      let current = sections[0];
+      sections.forEach((s) => { if (s.offsetTop <= y) current = s; });
+      links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + current.id));
+    };
+    document.addEventListener("scroll", setActive, { passive: true });
+    setActive();
+  </script>
+</body>
+</html>
